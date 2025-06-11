@@ -1,0 +1,8 @@
+jax
+equinox
+numpy
+matplotlib
+tqdm
+notebook
+scikit-learn
+safetensors
