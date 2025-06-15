@@ -6,3 +6,5 @@ tqdm
 notebook
 scikit-learn
 safetensors
+optax
+ffmpeg
