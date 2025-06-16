@@ -3,14 +3,17 @@ This repository contains a beginner-friendly introduction to diffusion models in
 
 ## Getting Started
 
-If you would like to run the code yourself, you can clone the repository and install the dependencies.
+If you would like to run the code yourself, you can clone the repository and install the dependencies. All the examples and notebook should run on a standard laptop.
 
 ```bash
 git clone https://github.com/adonath/jax-diffusion-models-pydata-boston-2025.git
 cd jax-diffusion-models-pydata-boston-2025
 ```
 
-## Using uv
+It is best 
+
+### Using uv
+
 
 ```bash
 uv venv
