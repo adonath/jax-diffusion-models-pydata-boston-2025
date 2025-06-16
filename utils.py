@@ -3,10 +3,8 @@ import matplotlib.pyplot as plt
 from jax import numpy as jnp
 from matplotlib import animation
 
-plt.rcParams['animation.ffmpeg_path'] = "/opt/local/bin/ffmpeg"
 
-
-def animate_trajectory(x, filename, x_range=(-2, 2), y_range=(-2, 2), fps=10, dpi=120, **kwargs):
+def animate_trajectory(x, filename, x_range=(-2, 2), y_range=(-2, 2), **kwargs):
     """Animate diffusion trajectory
     
     Parameters
@@ -14,24 +12,18 @@ def animate_trajectory(x, filename, x_range=(-2, 2), y_range=(-2, 2), fps=10, dp
     x : np.ndarray
         Array of shape (n_frames, n_particles, 2) representing the trajectory.
     filename : str
-        The filename to save the animation to. Should end with .mp4 for MP4 output.
+        The filename to save the animation to.
     x_range : tuple, optional
         The range of x values to plot over, in the form (min, max).
     y_range : tuple, optional
         The range of y values to plot over, in the form (min, max).
-    fps : int, optional
-        Frames per second for the output video.
-    dpi : int, optional
-        Dots per inch for the output video quality.
-    **kwargs : dict
-        Additional keyword arguments passed to plt.plot().
 
     Returns
     -------
     ani : matplotlib.animation.FuncAnimation
         The animation object.
     """
-    fig, ax = plt.subplots(figsize=(8, 8), dpi=dpi)
+    fig, ax = plt.subplots()
 
     kwargs.setdefault("markersize", 0.2)
     kwargs.setdefault("linestyle", "")
@@ -48,9 +40,8 @@ def animate_trajectory(x, filename, x_range=(-2, 2), y_range=(-2, 2), fps=10, dp
         line.set_data(x[idx, :, 0], x[idx, :, 1]) # Update line data
         return line,
 
-    ani = animation.FuncAnimation(fig, animate, frames=len(x), interval=1000//fps, blit=True)
-    ani.save(filename, writer="ffmpeg", fps=30)
-    return ani
+    ani = animation.FuncAnimation(fig, animate, frames=len(x), interval=100, blit=True)
+    ani.save(filename, writer='ffmpeg')
 
 
 def plot_vector_field(model, ax=None, x_range=(-2, 2, 10), y_range=(-2, 2, 10), **kwargs):
