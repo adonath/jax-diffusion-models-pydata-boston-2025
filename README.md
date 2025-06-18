@@ -10,16 +10,30 @@ git clone https://github.com/adonath/jax-diffusion-models-pydata-boston-2025.git
 cd jax-diffusion-models-pydata-boston-2025
 ```
 
-It is best 
+To setup the environment you can use just a standard Python virtual env:
 
-### Using uv
+```bash
+python -m venv jax-diffusion-pydata-boston
+./jax-diffusion-pydata-boston/bin/activate
+python -m pip install -r requirements.txtx
 
+```
+
+Alternatively you can also use [`uv`](https://docs.astral.sh/uv/):
 
 ```bash
 uv venv
 source jax-diffusion-models-pydata-boston-2025/bin/activate
 uv pip install -r requirements.txt
 ```
+
+Or conda / mamba:
+
+```bash
+conda env create --name jax-diffusion-pydata-boston --file requirements.txt
+conda activate jax-diffusion-pydata-boston
+```
+
 
 Otherwise you can just run the code in Google Colab at the link below:
 
