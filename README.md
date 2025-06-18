@@ -26,7 +26,13 @@ Otherwise you can just run the code in Google Colab at the link below:
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/adonath/jax-diffusion-models-pydata-boston-2025/blob/main/jax-diffusion-models-pydata-boston-2025.ipynb)
 
 
+**Note on Colab GPUs**
+If you use Google colab you can experiment with hardware accelerator GPU / TPU. For this you have to change the
+runtime environment, using: Runtime -> Change Runtime Type -> T4 GPU -> Save and then reconnect.
+JAX will create all the arrays on the default device, which is the GPU when selected. However please do not
+expect large speed ups on these toy examples, the overhead might be much larger than the actual computing time.
 
+If you are interested in hwo to benchmark JAX code, you should definitely read: https://docs.jax.dev/en/latest/faq.html#benchmarking-jax-code
 
 
 
