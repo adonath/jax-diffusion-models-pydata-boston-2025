@@ -34,6 +34,10 @@ conda env create --name jax-diffusion-pydata-boston --file requirements.txt
 conda activate jax-diffusion-pydata-boston
 ```
 
+Finally:
+```bash
+jupyter notebook jax-diffusion-models-pydata-boston-2025.ipynb```
+```
 
 Otherwise you can just run the code in Google Colab at the link below:
 
