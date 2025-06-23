@@ -1,5 +1,5 @@
 # A Beginner's Friendly Introduction to Diffusion Models in JAX
-This repository contains a beginner-friendly introduction to diffusion models in JAX given at the Pydata boston meeting.
+This repository contains a beginner-friendly introduction to diffusion models in JAX given at the Pydata Boston meeting on June 18th, 2025.
 
 ![animation](images/ddpm-swiss-roll-animation.gif)
 
