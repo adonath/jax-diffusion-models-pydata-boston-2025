@@ -24,6 +24,7 @@ jobs:
       - name: Run notebooks and copy to temp
         run: |
           jupyter nbconvert --output-dir='~/tmp' --execute --to markdown *.ipynb
+          git checkout -- .
           git checkout gh-pages
           cp -r ~/tmp/* ./
           mv jax-diffusion-models-pydata-boston-2025.md index.md
