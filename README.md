@@ -47,8 +47,7 @@ jupyter notebook jax-diffusion-models-pydata-boston-2025.ipynb```
 ```
 
 
-**Note on Colab GPUs**
-If you use Google colab you can experiment with hardware accelerator GPU / TPU. For this you have to change the
+**Note on Colab GPU:s** If you use Google colab you can experiment with hardware accelerator GPU / TPU. For this you have to change the 
 runtime environment, using: `Runtime -> Change Runtime Type -> T4 GPU -> Save` and then reconnect.
 JAX will create all the arrays on the default device, which is the GPU when selected. However please do not
 expect large speed ups on these toy examples, the overhead might be much larger than the actual computing time.
