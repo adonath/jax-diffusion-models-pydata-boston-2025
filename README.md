@@ -1,6 +1,7 @@
 # A Beginner's Friendly Introduction to Diffusion Models in JAX
 
-[![Webpage](https://img.shields.io/badge/Webpage-Click_to_read-blue)](http://axeldonath.com/jax-diffusion-models-pydata-boston-2025/)[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/adonath/jax-diffusion-models-pydata-boston-2025/blob/main/jax-diffusion-models-pydata-boston-2025.ipynb)
+[![Webpage](https://img.shields.io/badge/Webpage-Click_to_read-blue)](http://axeldonath.com/jax-diffusion-models-pydata-boston-2025/)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/adonath/jax-diffusion-models-pydata-boston-2025/blob/main/jax-diffusion-models-pydata-boston-2025.ipynb)
 
 
 This repository contains a beginner-friendly introduction to diffusion models in JAX given at the Pydata Boston meeting on June 18th, 2025.
