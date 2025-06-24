@@ -25,8 +25,7 @@ jobs:
         run: |
           jupyter nbconvert --output-dir='~/tmp' --execute --to markdown *.ipynb
           cp -r images/ ~/tmp
-          git checkout -- .
-          git checkout gh-pages
+          git switch -f gh-pages
           cp -r ~/tmp/* ./
           mv jax-diffusion-models-pydata-boston-2025.md index.md
       - name: Commit changes
