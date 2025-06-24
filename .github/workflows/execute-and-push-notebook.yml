@@ -24,6 +24,7 @@ jobs:
       - name: Run notebooks and copy to temp
         run: |
           jupyter nbconvert --output-dir='~/tmp' --execute --to markdown *.ipynb
+          cp -r images/ ~/tmp
           git checkout -- .
           git checkout gh-pages
           cp -r ~/tmp/* ./
