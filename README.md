@@ -1,4 +1,8 @@
 # A Beginner's Friendly Introduction to Diffusion Models in JAX
+
+[![Webpage](https://img.shields.io/badge/Webpage-Click_to_read-blue)](http://axeldonath.com/jax-diffusion-models-pydata-boston-2025/)
+
+
 This repository contains a beginner-friendly introduction to diffusion models in JAX given at the Pydata Boston meeting on June 18th, 2025.
 
 ![animation](images/ddpm-swiss-roll-animation.gif)
