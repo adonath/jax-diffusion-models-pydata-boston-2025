@@ -2,6 +2,8 @@
 
 [![Webpage](https://img.shields.io/badge/Webpage-Click_to_read-blue)](http://axeldonath.com/jax-diffusion-models-pydata-boston-2025/)
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/adonath/jax-diffusion-models-pydata-boston-2025/blob/main/jax-diffusion-models-pydata-boston-2025.ipynb)
+
 
 This repository contains a beginner-friendly introduction to diffusion models in JAX given at the Pydata Boston meeting on June 18th, 2025.
 
@@ -45,14 +47,10 @@ Finally:
 jupyter notebook jax-diffusion-models-pydata-boston-2025.ipynb```
 ```
 
-Otherwise you can just run the code in Google Colab at the link below:
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/adonath/jax-diffusion-models-pydata-boston-2025/blob/main/jax-diffusion-models-pydata-boston-2025.ipynb)
-
 
 **Note on Colab GPUs**
 If you use Google colab you can experiment with hardware accelerator GPU / TPU. For this you have to change the
-runtime environment, using: Runtime -> Change Runtime Type -> T4 GPU -> Save and then reconnect.
+runtime environment, using: `Runtime -> Change Runtime Type -> T4 GPU -> Save` and then reconnect.
 JAX will create all the arrays on the default device, which is the GPU when selected. However please do not
 expect large speed ups on these toy examples, the overhead might be much larger than the actual computing time.
 
