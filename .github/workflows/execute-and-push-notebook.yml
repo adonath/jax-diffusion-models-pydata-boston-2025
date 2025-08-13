@@ -22,6 +22,8 @@ jobs:
         run: |
           pip install -r requirements.txt
       - name: Run notebooks and copy to temp
+        env:
+            MAX_PRINT_LINES: 10
         run: |
           jupyter nbconvert --output-dir='~/tmp' --execute --to markdown *.ipynb
           cp -r images/ ~/tmp
