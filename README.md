@@ -52,7 +52,7 @@ runtime environment, using: `Runtime -> Change Runtime Type -> T4 GPU -> Save` a
 JAX will create all the arrays on the default device, which is the GPU when selected. However please do not
 expect large speed ups on these toy examples, the overhead might be much larger than the actual computing time.
 
-If you are interested in hwo to benchmark JAX code, you should definitely read: https://docs.jax.dev/en/latest/faq.html#benchmarking-jax-code
+If you are interested in how to benchmark JAX code, you should definitely read: https://docs.jax.dev/en/latest/faq.html#benchmarking-jax-code
 
 
 
